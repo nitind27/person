@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo — Simple Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="logo">Demo<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="hero-badge">✦ Welcome to the demo</p>
+        <h1>Build something <span class="gradient-text">beautiful</span> today</h1>
+        <p class="hero-subtitle">
+          A clean, responsive landing page ready to customize. Perfect for prototypes,
+          portfolios, or quick presentations.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+          <a href="#features" class="btn btn-secondary">Learn More</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-value">100%</span>
+            <span class="stat-label">Responsive</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">0</span>
+            <span class="stat-label">Dependencies</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">Fast</span>
+            <span class="stat-label">Load Time</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <h2 class="section-title">Features</h2>
+        <p class="section-subtitle">Everything you need for a quick demo</p>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon">🎨</div>
+            <h3>Modern Design</h3>
+            <p>Clean typography, smooth animations, and a polished color palette out of the box.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>Mobile First</h3>
+            <p>Looks great on phones, tablets, and desktops with a flexible layout system.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Lightweight</h3>
+            <p>Pure HTML, CSS, and vanilla JS — no frameworks, no build step required.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container about-inner">
+        <div class="about-text">
+          <h2 class="section-title">About This Demo</h2>
+          <p>
+            This is a starter template you can fork and adapt for any project. Replace the
+            copy, swap the colors, and add your own sections as needed.
+          </p>
+          <p>
+            The goal is simplicity: open <code>index.html</code> in a browser and you're
+            ready to present.
+          </p>
+        </div>
+        <div class="about-visual">
+          <div class="code-block">
+            <div class="code-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <pre><code><span class="code-keyword">const</span> demo = {
+  name: <span class="code-string">"Simple Website"</span>,
+  ready: <span class="code-bool">true</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">Send a message — this form is for demo only</p>
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Say hello..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+        <p class="form-success" id="form-success" hidden>Thanks! Your message was received (demo only).</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Demo. Built for demonstration purposes.</p>
+      <a href="#" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
